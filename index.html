@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+  <title>我的日历</title>
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="./global.css">
+  <link rel="stylesheet" href="./pages/index.css">
+<img src="" alt="">
+</head>
+<body>
+  <header class="siteHeader">
+    <h1>幸运日历-每一天都将会是您的幸运日</h1> 
+  </header>
+  <div class="calendar">
+    <div class="calendar-header">
+      <time id="time"></time>
+    </div>
+    <ol class="calendar-weekdays">
+      <li>一</li>
+      <li>二</li>
+      <li>三</li>
+      <li>四</li>
+      <li>五</li>
+      <li>六</li>
+      <li>日</li>
+    </ol>
+    <ol class="calendar-days" id="days">
+    </ol>
+    <div class="calendar-actions">
+      <div class="calendar-actions-left">
+        <button id="today">今天</button>
+      </div>
+      <div class="calendar-actions-right">
+        <button id="prevMonth">上个月</button>
+        <button id="nextMonth">下个月</button>
+      </div>
+    </div>
+  </div>
+  <div class="events-wrapper">
+    <h2>当前的日程</h2>
+    <div class="events" id="events">
+      
+    </div>
+  </div>
+
+  <script>
+    window.data = {
+      '2022-6-17': ["去看电影", "回寝室"],
+      '2021-6-18': ["去看电影", "回寝室"],
+      '2021-11-15': ["去看电影", "回寝室"],
+    }
+  </script>
+
+  <script src="./main.js"></script>
+</body>
+</html>
